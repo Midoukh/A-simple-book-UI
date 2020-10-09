@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 0.6em;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20pt;
+  background-color: rgb(235, 235, 235);
+
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+#bg{
+    display: flex;
+    justify-content: space-between;
+}
+#pirple{
+    width: 30%;
+    min-height: 85vh;
+    background-image: linear-gradient(rgb(206, 58, 206), rgb(127, 35, 139));
+    margin: 0;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    opacity: 0.9;
+}
+#dark-grey{
+  width: 25%;
+  background-color: rgb(192, 192, 192);
+  margin: 0;
+  min-height: 85vh;
+  justify-self: right;
+  position: relative;
+  top: 30vh;
+  border-top-left-radius: 95%;
+  opacity: 0.2;
+}
+#phone{
+    width: 33vh;
+    min-height: 62vh;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    left: 26%;
+    bottom: 75vh;
+    border-radius: 10%;
+    box-shadow: grey 0.5vh 0.4vh 5vh;
+    display: grid;
+    place-items: center;
+   
+}
+#inside_phone{
+    width: 31vh;
+    min-height: 60vh;
+    overflow: hidden;
+    position: relative;
+    left: 26.5%;
+    bottom: 135.9vh;
+    border-radius: 10%;
+    background-color: rgb(231, 231, 231);
+    opacity: 0.7;
+    z-index: 1;
+}
+.container-inside-phone{
+    min-height: 9vh;
+    width: 100%;
+    background-image: linear-gradient(45deg ,rgb(62, 11, 110), rgb(235, 47, 219));
+    overflow: hidden;
+    box-shadow: rgb(63, 0, 63) 0 0.5vh 1.7vh;
+    border-radius: 3pt;
+}
+.white-bar{
+    width: 55%;
+    min-height: 4.5vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 10;
+    border-radius: 40pt;
+    bottom: 30.2vh;
+}
+#avatar{
+    min-height: 0.5vh;
+    min-width: 1vh;
+    border-radius: 50%;
+    border: 1pt solid white;
+    position: absolute;
+    top: 4vh;
+    left: 5vh;
+    cursor: pointer;
+}
+#arrow-icon{
+    font-size: 18pt;
+    position: absolute;
+    left: 1.8vh;
+    color: white;
+    top: 1.3vh;
+    font-weight: lighter;
+    user-select: none;
+    cursor: pointer;
+}
+#avatar:hover{
+    border: 1pt solid rgba(255, 255, 255, 0.555);
+
+}
+.heads{
+    color: white;
+    margin: 0;
+    font-size: 27%;
+    display: inline;
+    line-height: 1pt;
+    position: absolute;
+    left: 9.5vh;
+    top: 3.6vh;
+    letter-spacing: 0.2pt;
+}
+.heads h3{
+    font-weight: 800;
+}
+.heads h5{
+    font-weight: lighter;
+    letter-spacing: 0.4pt;
+}
+#info{
+    font-size: 50%;
+    color: white;
+    position: absolute;
+    left: 90%;
+    top: 4.9%;
+    cursor: pointer;
+}
+.container#msg-1, .container#msg-2{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+    position: absolute;
+
+}
+#msg-1, #msg-2{
+    min-height: 4vh;
+    background-color: rgb(207, 207, 207);
+    z-index: 20;
+    margin-left: 1vh;
+    position: relative;
+    bottom: -2.3vh;
+    margin-bottom: 1vh;
+    width: 65%;
+    border-radius: 8pt;
+    font-size: 29%;
+    line-height: 1.9em;
+    text-align: left;
+    color: rgb(48, 9, 85);
+}
+#msg-1 p, 
+#msg-2 p{
+    padding: 0.5vh;
+    margin-left: 0.3vh;
+}
+#dog-images{
+    margin-top: 5vh;
+    border-radius: 10pt;
+    display: flex;
+    justify-content: flex-end;
+}
+#dog-images img{
+    border-radius: 7pt;
+    margin-right: 0.8vh;
+}
+#msg-3, #msg-4{
+    min-height: 4vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+    position: relative;
+    width: 65%;
+    margin-bottom: 1.5vh;
+    float: right;
+    border-radius: 8pt;
+    right: 1vh;
+    font-size: 29%;
+    line-height: 1.9em;
+    text-align: left;
+    color: rgb(48, 9, 85);
+    padding: 0.1vh;
+}
+#msg-3{
+    margin-top: 2vh;
+}
+#msg-4{
+    min-height: 3vh;
+}
+#msg-3 p,
+#msg-4 p{
+    position: relative;
+    left: 0.4vh;
+    margin: 0.35vh;
+}
+#msg-5, #msg-6{
+    min-height: 2.5vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+    position: relative;
+    width: 65%;
+    font-size: 29%;
+    line-height: 1.9em;
+    top: 12.5vh;
+    left: 1vh;
+    border-radius: 8pt;
+    background-image: linear-gradient(-45deg ,rgb(62, 11, 110), rgb(240, 49, 224));
+    text-align: left;
+    color: white;
+    align-items: center;
+}
+#msg-5{
+    padding-top: -1vh;
+
+}
+#msg-5 p span{
+    position: relative;
+    bottom: 2vh;
+    margin-left: 6.5vh;
+    padding: 0;
+}
+#msg-5 p,
+#msg-6 p{
+    position: relative;
+    left: 2vh;
+    width: 200%;
+}
+#msg-5 p span,
+#msg-6 p span{
+    font-weight: 800;
+    color: aliceblue;
+    position: relative;
+    left: 8vh;
+}
+.container2{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.content{
+    min-height: 40vh;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    left: 50%;
+    bottom: 33%;
+}
+.content p {
+    line-height: 1.5em;
+    font-size: 65%;
+    width: 60%;
+    font-weight: lighter;
+    opacity: 0.4;
+}
+.content h1{
+    color :rgb(49, 8, 87);
+}
+#send{
+    position: absolute;
+    top: 55.5vh;
+    left: 2vh;
+    text-align: center;
+}
+#send input[type=text]{
+    border: 0;
+    outline: none;
+    border-radius: 5pt;
+    width: 100%;
+    min-height: 3vh;
+}
+#send h3{
+    position: absolute;
+    left: 20%;
+    bottom: -2.8vh;
+    z-index: 30;
+    left: 23vh;
+    font-size: 50%;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 1.2vh;
+    min-height: 2vh;
+    width: 2vh;
+}
